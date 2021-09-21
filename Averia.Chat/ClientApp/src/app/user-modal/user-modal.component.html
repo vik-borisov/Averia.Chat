@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title">Как тебя зовут?</h4>
+</div>
+  <form #userForm="ngForm"  (ngSubmit)="userForm.form.valid && onSubmit()">
+    <div class="modal-body">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Ник в чате" required  [(ngModel)]="model.name"
+               #name="ngModel" [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid }">
+        <div class="invalid-feedback" *ngIf="userForm.submitted && name.invalid">
+          <p *ngIf="name.errors.required">Необходимо ввести ник</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="form-group">
+        <button class="btn btn-danger btn-block">Submit</button>
+      </div>
+    </div>
+  </form>

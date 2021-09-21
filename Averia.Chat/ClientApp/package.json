@@ -1,0 +1,41 @@
+{
+  "name": "Averia.Chat",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:ssr": "ng run Averia.Chat:server:dev",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^12.0.0",
+    "@angular/common": "^12.0.0",
+    "@angular/compiler": "^12.0.0",
+    "@angular/core": "^12.0.0",
+    "@angular/forms": "^12.0.0",
+    "@angular/localize": "^12.0.0",
+    "@angular/platform-browser": "^12.0.0",
+    "@angular/platform-browser-dynamic": "^12.0.0",
+    "@angular/platform-server": "^12.0.0",
+    "@angular/router": "^12.0.0",
+    "@ctrl/ngx-emoji-mart": "^6.0.1",
+    "@microsoft/signalr": "^5.0.10",
+    "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "ajv": "^6.9.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "rxjs": "^6.6.7",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^12.0.0",
+    "@angular/cli": "^12.0.0",
+    "@angular/compiler-cli": "^12.0.0",
+    "@angular/language-service": "^12.0.0",
+    "@types/node": "^12.0.0",
+    "typescript": "~4.2.3"
+  }
+}

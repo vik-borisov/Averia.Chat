@@ -1,0 +1,21 @@
+.chat {
+  background-color: lightgrey;
+}
+
+.chat-workspace {
+  height: 800px
+}
+
+.message .text {
+  max-width: 40%;
+}
+
+.rounded-15 {
+  border-radius: 15px;
+}
+
+.emoji {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}

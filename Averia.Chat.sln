@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Averia.Chat", "Averia.Chat\Averia.Chat.csproj", "{564E26C0-3FC9-4F14-98C0-96DB4880F7CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{460F732B-7905-45BF-85F3-47CF054EFB80}"
+ProjectSection(SolutionItems) = preProject
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Averia.Chat.Cli", "Averia.Chat.Cli\Averia.Chat.Cli.csproj", "{206D3C4C-9BD2-4191-B883-CFAB2F9528CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{564E26C0-3FC9-4F14-98C0-96DB4880F7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564E26C0-3FC9-4F14-98C0-96DB4880F7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564E26C0-3FC9-4F14-98C0-96DB4880F7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564E26C0-3FC9-4F14-98C0-96DB4880F7CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206D3C4C-9BD2-4191-B883-CFAB2F9528CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206D3C4C-9BD2-4191-B883-CFAB2F9528CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206D3C4C-9BD2-4191-B883-CFAB2F9528CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206D3C4C-9BD2-4191-B883-CFAB2F9528CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+<div class="container chat py-4 px-3">
+  <div class="row">
+    <div class="d-flex flex-column  chat-workspace overflow-auto col-12 py-2" #scrollMe
+         [scrollTop]="scrollMe.scrollHeight">
+      <ng-container *ngFor="let message of messages; index as i">
+        <div class="mb-1 message ">
+          <div class="mt-3" *ngIf="isShowHeader(i)">
+            <b>{{message.userId}}</b>
+          </div>
+          <div class="border rounded-15 bg-white p-3 text shadow" [ngClass]="{'ml-auto': isCurrentUser(message)}">
+            <span>{{message.text}}</span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="position-relative">
+    <emoji-mart class="emoji" [showPreview]="false" [isNative]="true" [skin]="2" set="google" [darkMode]="false" *ngIf="showPicker" (emojiClick)="addEmoji($event)"></emoji-mart>
+  </div>
+  <form (ngSubmit)="sendMessage()" class="row pt-3 px-3">
+    <div class="input-group col-8 rounded-15">
+      <input type="text" class="form-control" aria-describedby="message" [(ngModel)]="currentMessage" required/>
+      <div class="input-group-append">
+          <ngx-emoji emoji=":smiley::skin-tone-3:" size="25"  class="input-group-text" useButton="true" (click)="togglePicker()"></ngx-emoji>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary offset-1 col-3 rounded-15">Отправить</button>
+  </form>
+</div>

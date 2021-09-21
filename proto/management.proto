@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option csharp_namespace = "Averia.Chat";
+
+// Сервис управления
+service Management {
+  // Остановить сервис
+  rpc Stop (EmptyRequest) returns (EmptyReply) {}
+  // Получить список пользователей
+  rpc Users (EmptyRequest) returns (UsersReply) {}
+  // Получить список сообщений
+  rpc Messages (EmptyRequest) returns (stream MessageReply) {}
+}
+
+// Пустой запрос
+message EmptyRequest {
+}
+
+// Пустой ответ
+message EmptyReply {
+}
+
+// Ответ списка пользователей
+message UsersReply {
+  // Список пользователей
+  repeated string userIds = 1;
+}
+
+// ДТО сообщения
+message MessageDto {
+  // дата создания
+  int64 createDate = 1;
+  // идентификатор пользотваеля
+  string userId = 2;
+  // текст сообщения
+  string text = 3;
+}
+
+// ответ списка сообщений
+message MessageReply {
+  // Сообщения
+  MessageDto message = 1;
+}

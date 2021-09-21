@@ -1,0 +1,11 @@
+<div class="container h-100">
+  <div class="row h-100">
+    <div class="col-9">
+      <app-chat [messages]="messages" [currentUserId]="currentUserId" (newMessage)="sendMessage($event)"></app-chat>
+    </div>
+    <div class="col-3">
+      <app-users [users]="users"></app-users>
+    </div>
+  </div>
+</div>
+
